@@ -107,9 +107,7 @@ public class AStar {
                     parent.put(key[0] + " " + key[1], posi[0] + " " +posi[1]); 
                 }
                 
-            }
-            
-            
+            }           
                                    
             for(int j=0; j<adjTilesArray.length; j++){
 
