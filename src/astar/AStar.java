@@ -101,6 +101,7 @@ public class AStar {
             }           
                                    
             for(int j = 0; j < adjTilesArray.length; j++){
+                
 
                 if(!openList.contains(adjTilesArray[j]) && !closeList.contains(adjTilesArray[j]) && !adjTilesArray[j].equals("")){
                     openList.add(adjTilesArray[j]);
