@@ -31,10 +31,10 @@ public class AStar {
     */
     private static final int MAXROW    = 10;
     private static final int MAXCOL    = 10;
-    private static final int STARTROW  =  2;
-    private static final int STARTCOL  =  5;
-    private static final int ENDROW    =  8;
-    private static final int ENDCOL    =  5;
+    private static final int STARTROW  =  9;
+    private static final int STARTCOL  =  0;
+    private static final int ENDROW    =  0;
+    private static final int ENDCOL    =  9;
     
     public static void main(String[] args) {
         
@@ -54,8 +54,7 @@ public class AStar {
         String[] key;
         boolean findDest = false;
         int num = 0;
-        String finalPath = "";
-        
+        String finalPath = "";   
         
         try {
             
@@ -90,7 +89,7 @@ public class AStar {
             adjTilesArray = adjTiles.split("/");            
             posi = valueStart.split(";");
             
-            if(adjTilesArray.length > 1) {
+            if(!adjTilesArray[0].equals("")) {
                 
                 for(int i=0; i < adjTilesArray.length; i++){       
                     
@@ -99,16 +98,9 @@ public class AStar {
                                
                 }
                 
-            } else {
-                
-                if(adjTilesArray.length == 1 && !adjTilesArray[0].equals("")) {
-                    key = adjTilesArray[0].split(";");                    
-                    parent.put(key[0] + " " + key[1], posi[0] + " " +posi[1]); 
-                }
-                
             }           
                                    
-            for(int j=0; j<adjTilesArray.length; j++){
+            for(int j = 0; j < adjTilesArray.length; j++){
 
                 if(!openList.contains(adjTilesArray[j]) && !closeList.contains(adjTilesArray[j]) && !adjTilesArray[j].equals("")){
                     openList.add(adjTilesArray[j]);
