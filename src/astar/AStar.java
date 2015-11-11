@@ -31,10 +31,15 @@ public class AStar {
     */
     private static final int MAXROW    = 10;
     private static final int MAXCOL    = 10;
-    private static final int STARTROW  =  9;
-    private static final int STARTCOL  =  0;
-    private static final int ENDROW    =  0;
-    private static final int ENDCOL    =  9;
+//    private static final int STARTROW  =  9;
+//    private static final int STARTCOL  =  0;
+//    private static final int ENDROW    =  0;
+//    private static final int ENDCOL    =  9;
+    //Imposible
+    private static final int STARTROW  =  0;
+    private static final int STARTCOL  =  2;
+    private static final int ENDROW    =  8;
+    private static final int ENDCOL    =  5;
     
     public static void main(String[] args) {
         
