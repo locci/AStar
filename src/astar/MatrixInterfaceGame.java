@@ -1,4 +1,4 @@
- 
+ /*gera matrz para interface.*/
 package astar;
 
 import java.io.BufferedWriter;
